@@ -1,0 +1,70 @@
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: auto;
+    height: 1000px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 30px 3fr 1fr;
+    grid-template-areas: "header" "nav" "contenido" "footer";
+    grid-gap: 10px;
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+    border: 1px solid black;
+}
+.nav{
+    grid-area: nav;
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenido{
+    grid-area: contenido;
+    padding: 10px;
+    grid-gap: 10px;
+    background-color: blue;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 3fr 200px;
+    grid-template-areas: "cont ads";
+}
+.footer{
+    grid-area: footer;
+    background-color: blue;
+    border: 1px solid black;
+}
+.cont{
+    grid-area: cont;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: "cont1 cont2 cont3";
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+.ads{
+    grid-area: ads;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+.cont1{
+    grid-area: cont1;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+.cont2{
+    grid-area: cont2;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+.cont3{
+    grid-area: cont3;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
